@@ -11,6 +11,9 @@
 |
 */
 
+Route::any('client', 'SPAController@index');
+Route::any('client/{any}', 'SPAController@index');
+
 Route::get('/', function () {
     return view('welcome');
 });
