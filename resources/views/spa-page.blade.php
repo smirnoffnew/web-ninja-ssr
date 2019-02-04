@@ -12,7 +12,9 @@
 </head>
 
 <body>
-    {!! $ssr !!}
+    <div id="app">
+        {!! $ssr !!}
+    </div>
     <script src="{{ asset('js/entry-client.js') }}" type="text/javascript"></script>
 </body>
 </html>

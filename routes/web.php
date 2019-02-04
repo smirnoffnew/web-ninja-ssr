@@ -15,11 +15,6 @@ Route::group(
     ['prefix' => 'client'],
 
     function() {
-
-//        Route::any('/', 'SPAController@index');
-//        Route::any('/login', 'SPAController@index');
-//        Route::any('/registration', 'SPAController@index');
-
         Route::any('/', 'SPAController@index');
         Route::any('/{param1}', 'SPAController@index');
         Route::any('/{param1}/{param2}', 'SPAController@index');

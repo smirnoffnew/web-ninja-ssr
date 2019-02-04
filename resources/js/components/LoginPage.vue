@@ -10,6 +10,11 @@
 <script>
     export default {
         name: "LoginPage",
+        data() {
+            return {
+                name: 'Hello from LoginPage'
+            }
+        },
         methods: {
             send: () => {
                 http({
