@@ -1,5 +1,5 @@
+import app from './app'
 
-import { createApp } from './app'
-renderVueComponentToString(createApp(), (err, res) => {
+renderVueComponentToString(app, (err, res) => {
     print(res);
 });
