@@ -8,6 +8,9 @@
 </template>
 
 <script>
+    import http from '../http';
+    import axios from 'axios';
+
     export default {
         name: "LoginPage",
         data() {
@@ -17,21 +20,26 @@
         },
         methods: {
             send: () => {
-                http({
+                axios({
                     method: 'post',
-                    url: '/sign-in',
+                    url: 'http://localhost:8000/api/sign-in',
                     data: {
                         name: 'asdf',
                         email: 'asdf@asdf.asdf',
                         password: 'asdfasdf'
                     }
                 })
-                    .then(res =>  http({
+
+                .then(res =>  {
+                    console.log('res',res.data);
+                    return axios({
                         method: 'get',
-                        url: '/current',
+                        url: 'http://localhost:8000/api/current',
                         headers: {'Authorization': `Bearer ${res.data.access_token}`},
-                    }))
-                    .then(res=>console.log('res', res.data))
+                    })
+                })
+
+                .then(res=>console.log('res', res.data))
             }
         },
         mounted() {
