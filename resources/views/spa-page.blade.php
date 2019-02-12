@@ -5,16 +5,18 @@
         window.Laravel= <?= json_encode(['csrfToken' => csrf_token()]); ?>
     </script>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons' rel="stylesheet">
+    <link href="{{ URL::asset('/css/app.css') }}" rel="stylesheet" type="text/css">
     <title>Vue/Laravel SSR App</title>
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <div id="app">
         {!! $ssr !!}
     </div>
-    <script src="{{ asset('js/entry-client.js') }}" type="text/javascript"></script>
+    <script src="{{ URL::asset('js/entry-client.js') }}" type="text/javascript"></script>
 </body>
 </html>
