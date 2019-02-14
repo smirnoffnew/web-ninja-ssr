@@ -1,8 +1,7 @@
-import App from './components/App.vue';
+import App from './client-app.vue';
 import Vue from 'vue';
 import Vuetify from 'vuetify'
-import router from './router';
-
+import router from './client-router';
 
 Vue.use(Vuetify);
 

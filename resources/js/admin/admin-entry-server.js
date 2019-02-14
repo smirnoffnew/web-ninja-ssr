@@ -1,5 +1,5 @@
-import app from './app'
-import router from './router';
+import app from './admin-app'
+import router from './admin-router';
 
 new Promise((resolve, reject) => {
     router.push(url);

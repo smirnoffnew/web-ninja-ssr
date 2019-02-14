@@ -8,7 +8,7 @@
 </template>
 
 <script>
-    import http from '../http';
+    import http from './http';
     import axios from 'axios';
 
     export default {

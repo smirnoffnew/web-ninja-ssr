@@ -98,34 +98,13 @@
             </v-footer>
         </v-app>
     </div>
-
-            <!--<v-toolbar>-->
-                <!--<v-toolbar-side-icon></v-toolbar-side-icon>-->
-                <!--<v-toolbar-title>Title</v-toolbar-title>-->
-                <!--<v-spacer></v-spacer>-->
-                <!--<v-toolbar-items class="hidden-sm-and-down">-->
-                    <!--<v-btn flat>Link One</v-btn>-->
-                    <!--<v-btn flat>Link Two</v-btn>-->
-                    <!--<v-btn flat>Link Three</v-btn>-->
-                <!--</v-toolbar-items>-->
-            <!--</v-toolbar>-->
-     <!---->
-
-        <!--<div>-->
-            <!--<h1>{{ title }}</h1>-->
-            <!--<router-link  :to="{ path: '/'}" >home</router-link>-->
-            <!--<router-link  :to="{ path: 'login'}" >login</router-link>-->
-            <!--<router-link  :to="{ path: 'registration'}" >registration</router-link>-->
-            <!--<router-view></router-view>-->
-        <!--</div>-->
-    </div>
 </template>
 
 <script>
     export default {
         data() {
             return {
-                title: 'Welcome To My Site',
+                title: 'Web Site',
                 drawer: true,
                 items: [
                     { icon: 'trending_up', text: 'Most Popular' },
