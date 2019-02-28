@@ -74,18 +74,6 @@
                             <span>Source</span>
                             <router-view></router-view>
 
-                            <!--<v-tooltip right>-->
-                                <!--<v-btn-->
-                                    <!--icon-->
-                                    <!--large-->
-                                    <!--:href="source"-->
-                                    <!--target="_blank"-->
-                                    <!--slot="activator"-->
-                                <!--&gt;-->
-                                    <!--<v-icon large>code</v-icon>-->
-                                <!--</v-btn>-->
-                            <!--</v-tooltip>-->
-
                         </v-flex>
                     </v-layout>
                 </v-container>
@@ -105,7 +93,7 @@
         data() {
             return {
                 title: 'Client Site',
-                drawer: true,
+                drawer: false,
                 items: [
                     { icon: 'trending_up', text: 'Most Popular' },
                     { icon: 'subscriptions', text: 'Subscriptions' },
