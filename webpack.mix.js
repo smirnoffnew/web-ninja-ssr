@@ -4,8 +4,8 @@ mix
     .js('resources/js/admin/admin-entry-client.js', 'public/js')
     .js('resources/js/admin/admin-entry-server.js', 'public/js')
 
-    .js('resources/js/client/client-entry-client.js', 'public/js')
-    .js('resources/js/client/client-entry-server.js', 'public/js')
+    .js('resources/js/client/entry-client.js', 'public/js')
+    .js('resources/js/client/entry-server.js', 'public/js')
 
     .js('resources/js/test/test-entry-client.js', 'public/js')
     .js('resources/js/test/test-entry-server.js', 'public/js')

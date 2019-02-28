@@ -10,15 +10,17 @@ Route::group(
     }
 );
 
+
 Route::group(
     ['prefix' => 'client'],
     function() {
         Route::any('/', 'SPAController@client');
-        Route::any('/{param1}', 'SPAController@client');
+        Route::any('/{param}', 'SPAController@client');
         Route::any('/{param1}/{param2}', 'SPAController@client');
         Route::any('/{param1}/{param2}/{param3}', 'SPAController@client');
     }
 );
+
 
 Route::group(
     ['prefix' => 'test'],
