@@ -32,6 +32,7 @@ Route::group(
     }
 );
 
+
 Route::group(
     ['prefix' => 'web'],
     function() {

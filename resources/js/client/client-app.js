@@ -1,6 +1,6 @@
-import App from './client-app-component';
 import Vue from 'vue';
-import router from './router'
+import App from './client-app-component';
+import router from './client-router';
 
 export default new Vue({
     router,

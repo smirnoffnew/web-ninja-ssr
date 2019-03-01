@@ -49,7 +49,7 @@ class SPAController extends Controller
 
     private function clientRender($path) {
         $renderer_source = File::get(base_path('node_modules/vue-server-renderer/basic.js'));
-        $app_source = File::get(public_path('js/entry-server.js'));
+        $app_source = File::get(public_path('js/client-entry-server.js'));
         $v8 = new \V8Js();
         ob_start();
 

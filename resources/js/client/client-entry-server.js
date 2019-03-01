@@ -1,5 +1,5 @@
-import app from './app'
-import router from './router';
+import app from './client-app';
+import router from './client-router';
 
 new Promise((resolve, reject) => {
   router.push(url);
@@ -11,12 +11,12 @@ new Promise((resolve, reject) => {
     resolve(app);
   }, reject);
 })
-  .then(app => {
+.then(app => {
     renderVueComponentToString(app, (err, res) => {
       print(res);
     });
-  })
-  .catch((err) => {
+})
+.catch((err) => {
     print(err);
-  });
+});
 
