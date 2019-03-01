@@ -1,20 +1,32 @@
 <template>
     <div id="app">
-        <h1>{{ title }}</h1>
-        <router-view></router-view>
-        <router-link :to="{ name: 'home' }">Home</router-link>
-        <router-link :to="{ name: 'login' }">Login</router-link>
-        <router-link :to="{ name: 'registration' }">Registration</router-link>
-        <router-link :to="{ name: 'account-recovery' }">Account recovery</router-link>
+        <NavbarComponent :title="title"></NavbarComponent>
+        <v-content class="main-content-container">
+            <v-container fluid fill-height>
+                <v-layout align-center justify-center>
+                    <router-view></router-view>
+                </v-layout>
+            </v-container>
+        </v-content>
     </div>
 </template>
 
 <script>
+    import NavbarComponent from "./components/clientCommonComponents/NavbarComponent";
+
     export default {
         data() {
             return {
-                title: 'Welcome To My Site'
+                title: 'WEB NINJA'
             }
+        },
+        components: {
+            NavbarComponent,
         }
     }
 </script>
+
+<style lang="scss" scoped>
+
+</style>
+

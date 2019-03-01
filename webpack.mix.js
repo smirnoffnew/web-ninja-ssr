@@ -1,5 +1,9 @@
 const mix = require('laravel-mix');
 
+mix.options({
+    extractVueStyles: true
+});
+
 mix
     .js('resources/js/admin/admin-entry-client.js', 'public/js')
     .js('resources/js/admin/admin-entry-server.js', 'public/js')
