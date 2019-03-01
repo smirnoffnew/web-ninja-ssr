@@ -1,4 +1,4 @@
-import App from './components/App.vue';
+import App from './client-app-component';
 import Vue from 'vue';
 import router from './router'
 
