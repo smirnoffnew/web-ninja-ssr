@@ -1,14 +1,6 @@
 {
-    "/js/admin-entry-client.js": "/js/admin-entry-client.js",
-    "/css/admin-app.css": "/css/admin-app.css",
-    "/css/client-app.css": "/css/client-app.css",
-    "/css/test-app.css": "/css/test-app.css",
-    "/css/web-app.css": "/css/web-app.css",
-    "/js/admin-entry-server.js": "/js/admin-entry-server.js",
     "/js/client-entry-client.js": "/js/client-entry-client.js",
-    "/js/client-entry-server.js": "/js/client-entry-server.js",
-    "/js/test-entry-client.js": "/js/test-entry-client.js",
-    "/js/test-entry-server.js": "/js/test-entry-server.js",
-    "/js/web-entry-client.js": "/js/web-entry-client.js",
-    "/js/web-entry-server.js": "/js/web-entry-server.js"
+    "/css/client-global-app.css": "/css/client-global-app.css",
+    "/css/client-vue.css": "/css/client-vue.css",
+    "/js/client-entry-server.js": "/js/client-entry-server.js"
 }

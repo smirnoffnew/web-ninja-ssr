@@ -27,6 +27,9 @@
 </script>
 
 <style lang="scss" scoped>
-
+    /*extract client vue styles*/
+    .main-content-container {
+        height: 100vh;
+    }
 </style>
 
