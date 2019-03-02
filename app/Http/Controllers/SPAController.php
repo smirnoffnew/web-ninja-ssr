@@ -13,18 +13,6 @@ use Illuminate\Support\Facades\File;
 
 class SPAController extends Controller
 {
-    private function removePrefix($segments){
-        if (count($segments) > 1) {
-            if (count($segments) === 2) return $segments[1];
-            $res = '';
-            foreach ($segments as $key => $value) {
-                $key > 0 ? $res = $res . '/' . $value : null;
-            }
-            return $res;
-        } else {
-            return '/';
-        }
-    }
 
     public function admin(Request $request) {
         $ssr = $this->adminRender($request->path());
@@ -36,7 +24,15 @@ class SPAController extends Controller
         $app_source = File::get(public_path('js/admin-entry-server.js'));
         $v8 = new \V8Js();
         ob_start();
-        $v8->executeString('var process = { env: { VUE_ENV: "server", NODE_ENV: "production" }}; this.global = { process: process }; var url = "$path";');
+
+        $js =
+            <<<EOT
+var process = { env: { VUE_ENV: "server", NODE_ENV: "production" } };
+this.global = { process: process };
+var url = "$path";
+EOT;
+
+        $v8->executeString($js);
         $v8->executeString($renderer_source);
         $v8->executeString($app_source);
         return ob_get_clean();

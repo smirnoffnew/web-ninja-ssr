@@ -1,2 +1,2 @@
-import app from './admin-app'
-app.$mount('#app');
+import app from './admin-app';
+app.$mount('#app', true);

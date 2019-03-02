@@ -1,6 +1,6 @@
-import App from './admin-app.vue';
 import Vue from 'vue';
-import Vuetify from 'vuetify'
+import Vuetify from 'vuetify';
+import App from './admin-app-component';
 import router from './admin-router';
 
 Vue.use(Vuetify);

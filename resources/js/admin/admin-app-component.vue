@@ -17,7 +17,7 @@
     export default {
         data() {
             return {
-                title: 'WEB NINJA'
+                title: 'ADMIN NINJA'
             }
         },
         components: {
@@ -27,7 +27,7 @@
 </script>
 
 <style lang="scss" scoped>
-    /*extract client vue styles*/
+    /*extract admin vue styles*/
     .main-content-container {
         height: 100vh;
     }
