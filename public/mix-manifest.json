@@ -1,6 +1,6 @@
 {
-    "/js/admin-entry-client.js": "/js/admin-entry-client.js",
-    "/css/admin-global-app.css": "/css/admin-global-app.css",
-    "/css/admin-vue.css": "/css/admin-vue.css",
-    "/js/admin-entry-server.js": "/js/admin-entry-server.js"
+    "/js/test-entry-client.js": "/js/test-entry-client.js",
+    "/css/test-global-app.css": "/css/test-global-app.css",
+    "/css/test-vue.css": "/css/test-vue.css",
+    "/js/test-entry-server.js": "/js/test-entry-server.js"
 }
