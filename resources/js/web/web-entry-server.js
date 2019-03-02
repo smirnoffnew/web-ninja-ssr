@@ -17,6 +17,6 @@ new Promise((resolve, reject) => {
     });
 })
 .catch((err) => {
-    print(err);
+    print( new Error(err.code) );
 });
 
