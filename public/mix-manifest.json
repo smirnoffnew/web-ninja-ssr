@@ -1,6 +1,6 @@
 {
-    "/js/test-entry-client.js": "/js/test-entry-client.js",
-    "/css/test-global-app.css": "/css/test-global-app.css",
-    "/css/test-vue.css": "/css/test-vue.css",
-    "/js/test-entry-server.js": "/js/test-entry-server.js"
+    "/js/web-entry-client.js": "/js/web-entry-client.js",
+    "/css/web-global-app.css": "/css/web-global-app.css",
+    "/js/web-entry-server.js": "/js/web-entry-server.js",
+    "/css/web-vue.css": "/css/web-vue.css"
 }

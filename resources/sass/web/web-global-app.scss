@@ -12,6 +12,17 @@
 @import '../../../node_modules/vuetify/dist/vuetify.min.css';
 
 body {
+    font-family: 'Nunito', serif;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        &:hover{
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+
     .custom-menu {
         width: 200px !important;
     }
