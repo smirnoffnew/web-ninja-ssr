@@ -21,24 +21,6 @@ class SPAController extends Controller
         return view($prefix . '-spa', ['ssr' => $ssr]);
     }
 
-//    public function client(Request $request)
-//    {
-//        $ssr = $this->render(($request->path()),  $request->segments()[0]);
-//        return view('client-spa', ['ssr' => $ssr]);
-//    }
-//
-//    public function test(Request $request)
-//    {
-//        $ssr = $this->render($request->path(),  $request->segments()[0]);
-//        return view('test-spa', ['ssr' => $ssr]);
-//    }
-//
-//    public function web(Request $request)
-//    {
-//        $ssr = $this->render($request->path(), $request->segments()[0]);
-//        return view('web-spa', ['ssr' => $ssr]);
-//    }
-
     private function render($path, $prefix)
     {
         $renderer_source = File::get(base_path('node_modules/vue-server-renderer/basic.js'));

@@ -3,7 +3,6 @@ import Vuetify from 'vuetify';
 import App from './client-app-component';
 import router from './client-router';
 
-
 Vue.use(Vuetify);
 
 export default new Vue({

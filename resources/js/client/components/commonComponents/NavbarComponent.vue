@@ -1,5 +1,5 @@
 <template>
-    <v-toolbar  color="#1565C0">
+    <v-toolbar color="#1565C0">
         <v-icon>home</v-icon>
 
         <v-toolbar-title class="white--text">
