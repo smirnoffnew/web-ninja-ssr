@@ -9,17 +9,33 @@
         <v-spacer></v-spacer>
 
         <v-toolbar-items>
-            <v-btn flat class="font-weight-light">
-                <router-link :to="{ name: 'login' }">Login</router-link>
+            <v-btn
+                flat
+                exact
+                color="white"
+                class="nav-link"
+                to="login"
+            >login
             </v-btn>
 
-            <v-btn flat class="font-weight-light">
-                <router-link :to="{ name: 'registration' }">Registration</router-link>
+            <v-btn
+                flat
+                exact
+                color="white"
+                class="nav-link"
+                to="registration"
+            >registration
             </v-btn>
 
-            <v-btn flat class="font-weight-light">
-                <router-link :to="{ name: 'account-recovery' }">Account recovery</router-link>
+            <v-btn
+                flat
+                exact
+                color="white"
+                class="nav-link"
+                to="account-recovery"
+            >account-recovery
             </v-btn>
+
         </v-toolbar-items>
     </v-toolbar>
 </template>
@@ -32,3 +48,11 @@
         }
     }
 </script>
+
+<style scoped lang="scss">
+    nav {
+        .nav-link {
+            font-weight: bold;
+        }
+    }
+</style>

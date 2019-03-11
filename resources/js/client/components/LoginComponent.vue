@@ -4,7 +4,7 @@
             <v-layout align-center justify-center column>
 
                 <v-toolbar dark color="#1565C0">
-                    <v-toolbar-title>Login form</v-toolbar-title>
+                    <v-toolbar-title>Login</v-toolbar-title>
                 </v-toolbar>
 
                 <v-card-text :class="$vuetify.breakpoint.smAndUp ? 'large-padding' : 'small-padding '">
