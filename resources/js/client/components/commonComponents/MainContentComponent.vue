@@ -1,6 +1,6 @@
 <template>
     <v-content>
-        <v-container fill-height>
+        <v-container fluid fill-height>
             <v-layout justify-center align-center>
                 <router-view></router-view>
             </v-layout>
@@ -17,6 +17,6 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

@@ -1,7 +1,7 @@
 <template>
     <v-toolbar color="#1565C0">
-        <v-toolbar-side-icon @click.stop="$emit('open-side-bar')"></v-toolbar-side-icon>
-        <v-icon>home</v-icon>
+        <v-toolbar-side-icon  class="hidden-md-and-up" @click.stop="$emit('open-side-bar')"></v-toolbar-side-icon>
+        <v-icon class="hidden-sm-and-down">home</v-icon>
 
         <v-toolbar-title class="white--text">
             <router-link :to="{ name: 'home' }">{{title}}</router-link>
@@ -9,7 +9,7 @@
 
         <v-spacer></v-spacer>
 
-        <v-toolbar-items>
+        <v-toolbar-items class="hidden-sm-and-down">
             <v-btn
                 flat
                 exact

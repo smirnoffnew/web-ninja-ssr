@@ -1,8 +1,18 @@
 <template>
-    <div id="app">
-        <SideBarComponent :isOpen="isOpen" @open-side-bar="openClose"></SideBarComponent>
-        <NavbarComponent  @open-side-bar="isOpen = !isOpen"></NavbarComponent>
-        <MainContentComponent :data="{}"></MainContentComponent>
+    <div id="app" class="main-content-container">
+        <SideBarComponent
+            :isOpen="isOpen"
+            @open-side-bar="openClose"
+        ></SideBarComponent>
+
+        <NavbarComponent
+            :title="title"
+            @open-side-bar="isOpen = !isOpen"
+        ></NavbarComponent>
+
+        <MainContentComponent
+            :data="{}"
+        ></MainContentComponent>
     </div>
 </template>
 
@@ -14,6 +24,7 @@
     export default {
         data: () => ({
             isOpen: false,
+            title:'Client App',
             items: [
                 { icon: 'trending_up', text: 'Most Popular' },
                 { icon: 'subscriptions', text: 'Subscriptions' },
@@ -47,5 +58,9 @@
 
 <style lang="scss" scoped>
     /*extract client vue styles*/
+    .main-content-container {
+        height: 100vh;
+        width: 100vw;
+    }
 </style>
 
