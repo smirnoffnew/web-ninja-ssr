@@ -1,5 +1,6 @@
 <template>
     <v-toolbar color="#1565C0">
+        <v-toolbar-side-icon @click.stop="$emit('open-side-bar')"></v-toolbar-side-icon>
         <v-icon>home</v-icon>
 
         <v-toolbar-title class="white--text">
@@ -14,7 +15,7 @@
                 exact
                 color="white"
                 class="nav-link"
-                to="login"
+                :to="{name: 'login'}"
             >login
             </v-btn>
 
@@ -23,7 +24,7 @@
                 exact
                 color="white"
                 class="nav-link"
-                to="registration"
+                :to="{name: 'registration'}"
             >registration
             </v-btn>
 
@@ -32,7 +33,7 @@
                 exact
                 color="white"
                 class="nav-link"
-                to="account-recovery"
+                :to="{name: 'account-recovery'}"
             >account-recovery
             </v-btn>
 
