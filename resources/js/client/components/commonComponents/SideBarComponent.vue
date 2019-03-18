@@ -5,12 +5,13 @@
             v-model="localIsOpen"
             @input="$emit('open-side-bar', localIsOpen)"
             fixed
+            dense
             :mobile-break-point="1980"
         >
 
             <v-list dense>
                 <v-subheader class="mt-3 grey--text text--darken-1">Links</v-subheader>
-                <v-list-tile  class="tile" v-for="item in links" :key="item.path_name" @click="">
+                <v-list-tile  class="tile" v-for="item in links" :key="item.path_name" @click="$router.push({name:item.path_name})">
 
                     <v-list-tile-action>
                         <v-icon>{{ item.icon }}</v-icon>

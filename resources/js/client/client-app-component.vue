@@ -1,5 +1,5 @@
 <template>
-    <div id="app" class="main-content-container">
+    <div id="app" class="app-content-container">
         <SideBarComponent
             :isOpen="isOpen"
             :links="links"
@@ -51,7 +51,7 @@
 
 <style lang="scss" scoped>
     /*extract client vue styles*/
-    .main-content-container {
+    .app-content-container {
         height: 100vh;
         width: 100vw;
     }

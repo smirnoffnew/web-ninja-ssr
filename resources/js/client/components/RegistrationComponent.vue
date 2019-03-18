@@ -4,13 +4,15 @@
             <v-layout align-center justify-center column>
 
                 <v-toolbar dark color="#1565C0">
-                    <v-toolbar-title>Login</v-toolbar-title>
+                    <v-toolbar-title>Registration</v-toolbar-title>
                 </v-toolbar>
 
                 <v-card-text :class="$vuetify.breakpoint.smAndUp ? 'large-padding' : 'small-padding '">
                     <form>
                         <v-text-field prepend-icon="person" name="login" label="Login" type="text"></v-text-field>
-                        <v-text-field id="password" prepend-icon="lock" name="password" label="Password" type="password"></v-text-field>
+                        <v-text-field prepend-icon="email" name="email" label="Email" type="text"></v-text-field>
+                        <v-text-field id="password" prepend-icon="lock" name="password" label="Password"
+                                      type="password"></v-text-field>
                     </form>
                 </v-card-text>
 
@@ -30,6 +32,32 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+    .v-toolbar__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
+        & .v-toolbar__title {
+            margin: auto;
+        }
+    }
+
+    .large-padding {
+        padding-left: 30px;
+        padding-right: 40px;
+    }
+
+    .small-padding {
+        padding-left: 10px;
+        padding-right: 15px;
+    }
+
+    .lg-btn-mb {
+        margin-bottom: 20px;
+    }
+
+    .sm-btn-mb {
+        margin-bottom: 5px;
+    }
 </style>
