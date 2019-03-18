@@ -7,19 +7,25 @@
             fixed
             :mobile-break-point="1980"
         >
-            <v-list>
+
+            <v-list dense>
                 <v-subheader class="mt-3 grey--text text--darken-1">Links</v-subheader>
-                <v-list-tile v-for="link in links" :key="link.path_name">
+                <v-list-tile  class="tile" v-for="item in links" :key="item.path_name" @click="">
+
                     <v-list-tile-action>
-                        <v-icon>{{ link.icon }}</v-icon>
+                        <v-icon>{{ item.icon }}</v-icon>
                     </v-list-tile-action>
+
                     <v-list-tile-content>
                         <v-list-tile-title>
-                            {{ link.path_name }}
+                            {{ item.path_name }}
                         </v-list-tile-title>
                     </v-list-tile-content>
+
                 </v-list-tile>
             </v-list>
+
+
 
         </v-navigation-drawer>
     </div>
@@ -46,6 +52,17 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+    .tile {
+        margin: 5px;
+        border-radius: 4px;
+    }
 
+    .tile:hover {
+        background: #0066C0;
+    }
+
+    .tile:active {
+        background: yellow;
+    }
 </style>
