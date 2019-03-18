@@ -2,10 +2,12 @@
     <div id="app" class="main-content-container">
         <SideBarComponent
             :isOpen="isOpen"
+            :links="links"
             @open-side-bar="openClose"
         ></SideBarComponent>
 
         <NavbarComponent
+            :links="links"
             :title="title"
             @open-side-bar="isOpen = !isOpen"
         ></NavbarComponent>
@@ -25,20 +27,11 @@
         data: () => ({
             isOpen: false,
             title:'Client App',
-            items: [
-                { icon: 'trending_up', text: 'Most Popular' },
-                { icon: 'subscriptions', text: 'Subscriptions' },
-                { icon: 'history', text: 'History' },
-                { icon: 'featured_play_list', text: 'Playlists' },
-                { icon: 'watch_later', text: 'Watch Later' }
+            links: [
+                { icon: 'add',       path_name: 'registration' },
+                { icon: 'vpn_key',   path_name: 'login' },
+                { icon: 'replay',    path_name: 'account-recovery' },
             ],
-            items2: [
-                { picture: 28, text: 'Joseph' },
-                { picture: 38, text: 'Apple' },
-                { picture: 48, text: 'Xbox Ahoy' },
-                { picture: 58, text: 'Nokia' },
-                { picture: 78, text: 'MKBHD' }
-            ]
         }),
 
         methods: {

@@ -10,33 +10,15 @@
         <v-spacer></v-spacer>
 
         <v-toolbar-items class="hidden-sm-and-down">
-            <v-btn
-                flat
-                exact
-                color="white"
-                class="nav-link"
-                :to="{name: 'login'}"
-            >login
+            <v-btn v-for="link in links"
+                   :key="link.path_name"
+                   flat
+                   exact
+                   color="white"
+                   class="nav-link"
+                   :to="{name: link.path_name}">
+                   {{link.path_name}}
             </v-btn>
-
-            <v-btn
-                flat
-                exact
-                color="white"
-                class="nav-link"
-                :to="{name: 'registration'}"
-            >registration
-            </v-btn>
-
-            <v-btn
-                flat
-                exact
-                color="white"
-                class="nav-link"
-                :to="{name: 'account-recovery'}"
-            >account-recovery
-            </v-btn>
-
         </v-toolbar-items>
     </v-toolbar>
 </template>
@@ -46,6 +28,7 @@
         name: "NavbarComponent",
         props: {
             title: String,
+            links: Array
         }
     }
 </script>
